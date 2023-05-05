@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Eddie Eagle CSULA</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		body {
+			background-color: #F8C8DC;
+		}
+
+		.header {
+			background-color: #F8C8DC;
+			padding: 30px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			position: relative;
+		}
+
+		.logo {
+			max-width: 200px;
+			position: absolute;
+			top: 80px;
+			left: 30px;
+		}
+
+		.nav-menu {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			margin-top: 20px;
+		}
+
+		.nav-menu li {
+			list-style: none;
+			margin-left: 20px;
+		}
+
+		.nav-menu a {
+			text-decoration: none;
+			color: #000000;
+			font-weight: bold;
+		}
+
+		.nav a[href="#portfolio"]:focus+.hero-container .btn {
+			border: 2px solid #f1c40f;
+		}
+
+		.banner {
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			height: 169px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0 auto;
+		}
+
+		.hero-section {
+			padding: 50px 0;
+		}
+
+		.hero-container {
+			max-width: 700px;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		.services-section {
+			padding: 50px 0;
+		}
+
+		.services-container {
+			max-width: 900px;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		.services-grid {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		.service-item {
+			flex: 1;
+			max-width: 300px;
+			margin: 20px;
+			text-align: center;
+		}
+
+		.service-item img {
+			height: 100px;
+			/* set a fixed height */
+			object-fit: contain;
+			/* scale the image to fill the container */
+		}
+
+		.service-item h3 {
+			margin-top: 10px;
+		}
+
+		.service-item p {
+			margin-top: 5px;
+		}
+
+		.cta-button {
+			background-color: #FF69B4;
+			color: #FFFFFF;
+			padding: 10px 20px;
+			border-radius: 5px;
+			text-decoration: none;
+			font-weight: bold;
+			margin-top: 20px;
+			display: inline-block;
+		}
+
+		.cta-button:hover {
+			background-color: #FF1493;
+		}
+
+		/* Add styles to the active section when its ID is targeted */
+		section:target {
+			border: 2px solid yellow;
+		}
+
+		/* Style the active navigation link when its corresponding section is targeted */
+		a[href]:target {
+			font-weight: bold;
+			color: red;
+		}
+
+		.btn {
+			background-color: #f44336;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			font-size: 16px;
+			border-radius: 4px;
+			transition: background-color 0.3s ease;
+		}
+
+		.btn:hover {
+			background-color: #fff;
+			color: #f44336;
+			border: 2px solid #f44336;
+		}
+	</style>
+</head>
+
+<body>
+	<header class="header">
+		<img src="Eddie1.jpg" alt="Eddie Eagle CSULA logo" class="logo">
+		<div class="banner">
+			<img src="csula_banner.png" alt="CSULA Banner">
+		</div>
+	</header>
+	<nav>
+		<ul class="nav-menu">
+			<li><a href="#">Home</a></li>
+			<li><a href="#hero-section">About</a></li>
+			<li><a href="#services-section">Services</a></li>
+			<li><a href="#hero-section">Portfolio</a></li>
+			<li><a href="#contact-section">Contact</a></li>
+		</ul>
+	</nav>
+	<section id="home-section">
+		<!-- Home section content goes here -->
+	</section>
+	<section id="hero-section" class="hero-section">
+		<div class="hero-container">
+			<h1>Welcome to Eddie Eagle CSULA</h1>
+			<p>We're dedicated to providing high-quality mascot services to the California State University, Los Angeles
+				community.</p>
+			<a href="#btn" class="btn">Learn More</a>
+		</div>
+	</section>
+
+	</section>
+	<section id="services-section" class="services-section">
+		<div class="services-container">
+			<h2>Our Services</h2>
+			<div class="services-grid">
+				<div class="service-item">
+					<img src="Eddie2.jpg" alt="Service 1">
+					<h3>Event Appearances</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel leo quis nisi pharetra bibendum.
+					</p>
+				</div>
+				<div class="service-item">
+					<img src="Eddie3.jpg" alt="Service 2">
+					<h3>Social Media</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel leo quis nisi pharetra bibendum.
+					</p>
+				</div>
+				<div class="service-item">
+					<img src="Eddie4.jpg" alt="Service 3">
+					<h3>School Visits</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel leo quis nisi pharetra bibendum.
+					</p>
+				</div>
+				<div class="service-item">
+					<img src="Eddie5.jpg" alt="Service 4">
+					<h3>Workshops</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel leo quis nisi pharetra bibendum.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="contact-section" class="contact-section">
+		<div class="contact-container">
+			<h2>Contact Us</h2>
+			<form action="#" method="post">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" required rows="1" cols="20"></textarea>
+				<button type="submit" class="cta-button">Send</button>
+			</form>
+		</div>
+	</section>
+</body>
+
+</html>
